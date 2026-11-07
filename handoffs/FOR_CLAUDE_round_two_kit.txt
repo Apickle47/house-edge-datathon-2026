@@ -1,0 +1,15 @@
+Claude — prepare one blind House Edge round-two rehearsal for Arush and Codex.
+
+Question: On fresh episodes with changed rules, does refitting our main model on the new round beat both the unchanged main model and the pooled starter? Codex will run the models. Please own the synthetic kit and independent scoring.
+
+1. Build the kit. Use the organizer's main-participants-60-40.zip as the schema and scale reference: 24 train, 24 validation and 48 test episodes per condition, eight machines per episode. Include the four official conditions: stable, short_history, drift and shared_change. Provide the working checker, packager and public/ folder. Set public/metadata.json to round adaptation, max_points 40 and a new valid synthetic season ID. Use fresh seeds and disjoint episodes across splits. Keep the underlying round rules consistent across splits so there is something meaningful to learn.
+
+2. Change the rules. Include unfamiliar lag relationships and payout-size behavior, some machines without peer dependence, and some with a different peer delay. Give short-history machines 40 recent consecutive ticks plus 24 sampled older ticks. Generate true next-spin probabilities before drawing the outcome. Payouts must be 0, 1, 2, 5 or 20. No cutoff or future spin may enter a query's inputs.
+
+3. Release the participant-facing files. Match the real kit: train histories, queries, sampled labels and conditions; validation histories, queries, labels, conditions, true probabilities and reference.csv; test histories, queries and sample submission only. Fit the official pooled starter on this mock round's training data to produce the reference forecasts. Keep the test truth, test conditions and test reference in your evaluator folder outside the shared kit.
+
+4. Freeze the benchmark before seeing forecasts. Record seeds, counts and SHA-256 hashes, including a commitment to the sealed test truth. Put the participant kit and a short README in a NEW Downloads folder named house_edge_mock_adaptation. Return its exact path, the kit hash and the checker command to Arush. Please keep the existing competition submission folders untouched.
+
+5. Score once Codex returns the three forecast files. Compare (A) the official pooled starter fitted on mock train, (B) the unchanged checkpoint from Downloads/SUBMIT_house_edge_peer_main/entry.zip, and (C) our model refitted using the released mock kit. All three must predict the same test IDs. Report official adaptation points out of 40, the four normalized condition errors, and the paired C-minus-B point difference with a 95% interval from resampling whole episodes within condition. Flag missing IDs or invalid probabilities. Include fit and prediction runtimes when available from Codex.
+
+First deliverable: send the kit path as soon as it is ready. Keep the sealed results for after the three forecasts are frozen. This is a rehearsal; Arush handles competition uploads.

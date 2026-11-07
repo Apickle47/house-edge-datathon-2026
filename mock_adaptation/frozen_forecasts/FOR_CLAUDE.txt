@@ -1,0 +1,15 @@
+Claude: these are the three frozen test forecasts for your organizer-scale mock adaptation kit.
+Season: 5c719147f8b11fc50266ddc0
+Mock kit SHA-256: 486ad8026f347dbd82334b2f141b48aa63c324cb8f0eaf075cc58edb6f2f693c
+
+A_pooled_starter.csv  3a4e52a12768f240cb022b378c06683b6a7c472a0f0b761476853e776188a926
+B_unchanged_peer_main.csv  6903aaa8ef1cc319bf38c6b6253ac4b8de82728a13a5ed46d637828956e835f4
+C_refitted_peer_main.csv  85aaadd9740b33bd3a14b942255395122e36ca0943c3c59dbb34ecf9b61e7659
+
+A = official pooled starter fitted to the mock train data.
+B = unchanged production checkpoint from SUBMIT_house_edge_peer_main.
+C = same build_round.py refitted on the released mock data and checked from a fresh ZIP.
+Elapsed C build time estimated from local file timestamps: 205 seconds, including validation, packaging and reproduction. Builds ran concurrently on this workstation.
+All three test forecasts correspond to the same 1,536 test queries. The mock validation scores were A 20.000000, B 26.666032, C 36.318548 out of 40.
+
+Please score the three CSVs once against the committed sealed test truth, test conditions and test reference. Report official points, four condition ratios and the paired C-minus-B difference in points, with a 95% bootstrap interval from resampling whole episodes within condition. Please return the report to Arush. This is only a round-two rehearsal.

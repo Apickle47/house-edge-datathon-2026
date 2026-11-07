@@ -1,0 +1,17 @@
+VALID FORMAT: 768 queries | adaptation | validation
+Season: 339a5d4727d3667ce5e537a6
+SHA-256: 658f09e77a63c837fce4056dfe6e711a57fee09e1eb8ebb1710c132bc894b152
+Validation points: 36.504477 / 40
+  stable: loss ratio 0.063116 (lower is better)
+  short_history: loss ratio 0.147220 (lower is better)
+  drift: loss ratio 0.129762 (lower is better)
+  shared_change: loss ratio 0.042925 (lower is better)
+Local check only. Nothing was uploaded. Acceptance and code reproduction are separate.
+
+VALID FORMAT: 1536 queries | adaptation | test
+Season: 339a5d4727d3667ce5e537a6
+SHA-256: 81f60d3b0310bad005556532f0fb9f8cee817c763efc2d5f9547cb6eba15b5eb
+Test answers are private; this check does not calculate your event score.
+Local check only. Nothing was uploaded. Acceptance and code reproduction are separate.
+
+Fresh archive reproduction: byte-identical.

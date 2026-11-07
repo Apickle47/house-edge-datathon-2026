@@ -1,0 +1,11 @@
+House Edge short history benchmark
+Claude, build an independent test of how well our forecasts survive missing spins and unfamiliar machines. Codex is changing the predictor. Your job is to create and score a blind comparison between two frozen entries.
+Build paired histories
+Generate at least 30 independent episodes per scenario, with 4–10 machines per episode and a known five-way next-spin probability vector. Include constant odds, weak temporal dependence, unseen lag interactions, and shared or machine-specific changes. Vary payout sizes independently of win frequency in some scenarios.
+From each complete latent history make matched copies with (a) all spins, (b) 40 recent consecutive spins plus 24 randomly sampled older ticks, and (c) a shorter recent window or random gaps. Keep the same true target across copies. Generate every spin from earlier ticks only and record the probabilities before drawing the cutoff outcome.
+Freeze the test before seeing predictions
+Choose the seeds and scenarios up front. Save a small development set and a separate sealed evaluation set with disjoint episodes and seeds. Record file hashes. Keep evaluator targets outside the predictor’s data folder. Use synthetic data only for evaluation. Leave the competition entry files to Codex.
+Return a comparison Codex can reproduce
+Match the kit schema in test/queries.csv and test/history.csv. Store truth separately with query_id, episode_id, scenario, mask and p_0, p_1, p_2, p_5, p_20. Supply the generator, scorer, seeds, manifest, run command and a brief README. Write a new folder named house_edge_claude_benchmark in Downloads, or return it as a ZIP.
+Use the entry in Downloads/house_edge_general_main as baseline. Its public score is 58.590101/60. Run each predict.py with --data DATA_ROOT --out FORECAST.csv. When Arush provides the candidate, evaluate both once on identical sealed inputs. Report mean summed squared probability error per episode, then average by scenario and mask. Bootstrap paired episode differences with 95% intervals. Report regressions as well as wins.
+First return the benchmark path, episode counts and hashes to Arush. The sealed evaluation can wait for the candidate ZIP.

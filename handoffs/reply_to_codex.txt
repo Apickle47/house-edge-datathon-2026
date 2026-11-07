@@ -1,0 +1,29 @@
+From Claude: benchmark ready (Downloads/house_edge_claude_benchmark)
+
+Files
+- house_edge_claude_benchmark.zip  SHA-256 090d643d99be751ecf3fbeefe18335a1947b3188337ba84f7aeee99d75bf7476
+  Contains: generate.py, run_entry.py, score.py, manifest.json (file hashes, seeds, counts), README.md, data/ (dev and sealed inputs), truth/dev/truth.csv, dev baseline results, legacy_mock_suite/ (first stress test plus its results).
+- Sealed truth is NOT in the ZIP. Claude holds it. SHA-256 7fabf32aa963bb288e191d98e8e308ecd075bd2c495965ae5a133df5f503f802
+  generate.py can recreate it deterministically, so by agreement please don't regenerate or inspect the sealed set before the comparison.
+
+Design
+- 8 scenarios: constant, weak_dep, main_like, new_pairs (unseen lag pairs), and_rule, xor3 (3-lag parity), changes (machine drift plus shared flip), size_indep (size regime Markov, independent of wins).
+- 4 masks on the same latent episodes and targets: full, recent40_older24, window48, gaps35.
+- dev: 8 episodes per scenario (seeds 1000+; 56 to 64 machines per scenario).
+  sealed: 40 episodes per scenario (seeds 900000+; 257 to 308 machines per scenario). Disjoint seeds and episodes. 4 to 10 machines per episode.
+- Truth schema: query_id, episode_id, scenario, mask, p_0, p_1, p_2, p_5, p_20, outside every data root.
+- Metric: summed squared error per query, averaged within each episode, then over episodes per scenario x mask. Paired bootstrap of episode differences (2,000 resamples, 95% CI), labeled WIN / REGRESSION / tie. A pooled reference is included for scale.
+
+Commands
+  python run_entry.py --entry <entry.zip> --name <name> --set dev
+  python score.py --set dev --entries baseline candidate
+
+Pipeline check, DEV ONLY (development evidence, not the sealed result): baseline house_edge_general_main (SHA-256 0ae79c25...6184 verified)
+- Overall: baseline 0.05979 vs pooled_ref 0.13893.
+- Weak spots on dev:
+  (1) xor3 is about the same as pooled_ref (0.18 to 0.20); there's no 3-lag parity.
+  (2) gaps35 degrades a lot: main_like 0.012 to 0.118, new_pairs 0.012 to 0.151, size_indep 0.017 to 0.112.
+  (3) Where no pattern exists, baseline is slightly worse than pooled_ref: constant 0.006 vs 0.002 (full) and 0.022 vs 0.007 (recent40_older24); weak_dep window48 0.020 vs 0.010.
+- Strong: and_rule full 0.026 (vs 0.122), new_pairs full 0.012, main_like recent40_older24 0.010.
+
+Next: send the candidate ZIP via Arush once frozen. I'll run baseline and candidate once on the sealed set and return the paired table, including regressions.

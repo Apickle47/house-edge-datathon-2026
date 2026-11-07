@@ -1,0 +1,437 @@
+{
+ "baseline_entry_sha256": "0ae79c2581911b32bf0bc9aa84bfa5745c55a762cf5cf2e07fcb3b5a38eb6184",
+ "files": {
+  "data/dev/and_rule/full/test/history.csv": "2d75722363ead01f2e1faa35f0080f8b526efa03b9e8f9b5822ffa2e69c95d7f",
+  "data/dev/and_rule/full/test/queries.csv": "07f0e387e98dcaadf7d5c7f9f626a8c17f713b4ca02b33e0a4d82b12c87b3ecd",
+  "data/dev/and_rule/gaps35/test/history.csv": "2abec9954fb31645b7f58c8d55d778efc112c405c7aa2a049814f52ee5362dfd",
+  "data/dev/and_rule/gaps35/test/queries.csv": "07f0e387e98dcaadf7d5c7f9f626a8c17f713b4ca02b33e0a4d82b12c87b3ecd",
+  "data/dev/and_rule/recent40_older24/test/history.csv": "7dcc247bee5477f9bec4ffd7136401556a797cf6766568c3ccb8bc1e7af7d7b3",
+  "data/dev/and_rule/recent40_older24/test/queries.csv": "07f0e387e98dcaadf7d5c7f9f626a8c17f713b4ca02b33e0a4d82b12c87b3ecd",
+  "data/dev/and_rule/window48/test/history.csv": "0050d93769bff74a5369b8f577e6ae385826e9c9d655d4f667f760a9de75e5fe",
+  "data/dev/and_rule/window48/test/queries.csv": "07f0e387e98dcaadf7d5c7f9f626a8c17f713b4ca02b33e0a4d82b12c87b3ecd",
+  "data/dev/changes/full/test/history.csv": "7d3599b1b1934708f42aae1fd26459faaaf45e6c74938a622e6c7c19cfed1b28",
+  "data/dev/changes/full/test/queries.csv": "1cec920da813863c1cde6ef60d13018a17b8183bd4bb6bb72380672302ad5ae7",
+  "data/dev/changes/gaps35/test/history.csv": "256c600f0141f66810039696fee1016ed13dd10f679921ae31049b67cad56786",
+  "data/dev/changes/gaps35/test/queries.csv": "1cec920da813863c1cde6ef60d13018a17b8183bd4bb6bb72380672302ad5ae7",
+  "data/dev/changes/recent40_older24/test/history.csv": "654b0696545fc57d91e1aa820725978ab173265732a51219b4b58b1b401f38d7",
+  "data/dev/changes/recent40_older24/test/queries.csv": "1cec920da813863c1cde6ef60d13018a17b8183bd4bb6bb72380672302ad5ae7",
+  "data/dev/changes/window48/test/history.csv": "dd9d67d86ef27fbb72e4a99e577e89c8ed84a20965790942389287d7eea97ecf",
+  "data/dev/changes/window48/test/queries.csv": "1cec920da813863c1cde6ef60d13018a17b8183bd4bb6bb72380672302ad5ae7",
+  "data/dev/constant/full/test/history.csv": "17ec69344e3b0bd0ba85c5253dc66ff25fc56a112b0098380708c992f4dac64f",
+  "data/dev/constant/full/test/queries.csv": "358c7129f47abe4a49a0e329938e1a4ebe89c028885f6e460b58312df368f452",
+  "data/dev/constant/gaps35/test/history.csv": "f45ce3239e73ac1512f61975b6849539fcbc60373daafdd44d0cc0e3b1f9eadc",
+  "data/dev/constant/gaps35/test/queries.csv": "358c7129f47abe4a49a0e329938e1a4ebe89c028885f6e460b58312df368f452",
+  "data/dev/constant/recent40_older24/test/history.csv": "803e1f74ea331c7baa48a7124cf33f82c45aac68b607eab73828c4922bdbe98f",
+  "data/dev/constant/recent40_older24/test/queries.csv": "358c7129f47abe4a49a0e329938e1a4ebe89c028885f6e460b58312df368f452",
+  "data/dev/constant/window48/test/history.csv": "d641b3370c43b763876fda6ca5034fe0b0f065f46724fa3ebfa773153fdf7950",
+  "data/dev/constant/window48/test/queries.csv": "358c7129f47abe4a49a0e329938e1a4ebe89c028885f6e460b58312df368f452",
+  "data/dev/main_like/full/test/history.csv": "7af5131b7847b41a57c458dc57ad0fb03005a6f26a13946ebbc3decec038556a",
+  "data/dev/main_like/full/test/queries.csv": "55ff57234b01955c82c21777f2cdcd9ce4ae25872ab7bca166287f0c5d9adab1",
+  "data/dev/main_like/gaps35/test/history.csv": "73bceacc3805a20b4f1a28ffa5214fa40d5c8f47d00687d4e0e47607b1418571",
+  "data/dev/main_like/gaps35/test/queries.csv": "55ff57234b01955c82c21777f2cdcd9ce4ae25872ab7bca166287f0c5d9adab1",
+  "data/dev/main_like/recent40_older24/test/history.csv": "0c67ae7d2cc0e00c3a77d438421adb56d33ae35724606d14d45ee6f8295745af",
+  "data/dev/main_like/recent40_older24/test/queries.csv": "55ff57234b01955c82c21777f2cdcd9ce4ae25872ab7bca166287f0c5d9adab1",
+  "data/dev/main_like/window48/test/history.csv": "a7d119b900318dd119498fd75cb61bd8a3dd129d292ee99480958f84ef385f62",
+  "data/dev/main_like/window48/test/queries.csv": "55ff57234b01955c82c21777f2cdcd9ce4ae25872ab7bca166287f0c5d9adab1",
+  "data/dev/new_pairs/full/test/history.csv": "cc2fa04033d5245ddf5b765abd05fdf771e97a18e7906b30ad2910a5a3faa3db",
+  "data/dev/new_pairs/full/test/queries.csv": "ce819451f72f47377d204aebb1dbf2f803fb7335783713a2cb13899cceefb8ce",
+  "data/dev/new_pairs/gaps35/test/history.csv": "11388e23695813e41998309b3d87396529ed9bd97fbd3c1c238aa9ee8230e660",
+  "data/dev/new_pairs/gaps35/test/queries.csv": "ce819451f72f47377d204aebb1dbf2f803fb7335783713a2cb13899cceefb8ce",
+  "data/dev/new_pairs/recent40_older24/test/history.csv": "374e78ce464399d440acf5b5760ea381056f937129d8e80b21f3f192826dc936",
+  "data/dev/new_pairs/recent40_older24/test/queries.csv": "ce819451f72f47377d204aebb1dbf2f803fb7335783713a2cb13899cceefb8ce",
+  "data/dev/new_pairs/window48/test/history.csv": "5b875fe4a922341de8dc1924026a5cedf43ca2220bea099d70dfda76d12d9632",
+  "data/dev/new_pairs/window48/test/queries.csv": "ce819451f72f47377d204aebb1dbf2f803fb7335783713a2cb13899cceefb8ce",
+  "data/dev/size_indep/full/test/history.csv": "a3aa1bfe86e7d8e81bb224159bbc3a3b68234a12367ddcc832a6b100aeb5c261",
+  "data/dev/size_indep/full/test/queries.csv": "2a1ef50cd573f33935eed90b17b935b2a72ca31b0795988fda0fa4c296377698",
+  "data/dev/size_indep/gaps35/test/history.csv": "a0be38620dece14c6cd5c93e60696e1fa4da24efabe66be659eee5aaa6bb7a5f",
+  "data/dev/size_indep/gaps35/test/queries.csv": "2a1ef50cd573f33935eed90b17b935b2a72ca31b0795988fda0fa4c296377698",
+  "data/dev/size_indep/recent40_older24/test/history.csv": "17a84d3cf86d67b0c0bd22044c8f6d0e7c534a6c38efbcebe9395e661e929807",
+  "data/dev/size_indep/recent40_older24/test/queries.csv": "2a1ef50cd573f33935eed90b17b935b2a72ca31b0795988fda0fa4c296377698",
+  "data/dev/size_indep/window48/test/history.csv": "7dda8e331e38653c16a5dbe0bb1191837ec31f92309e490f72f6354c93bc4df0",
+  "data/dev/size_indep/window48/test/queries.csv": "2a1ef50cd573f33935eed90b17b935b2a72ca31b0795988fda0fa4c296377698",
+  "data/dev/weak_dep/full/test/history.csv": "976b8ede0bc396b88ccb1943acae7fc502607c3154592e663dce3674e5b7eaa8",
+  "data/dev/weak_dep/full/test/queries.csv": "32f85c236c54306db5423a9d1c7c4dd59ede31c9bb3c44aeb31ac2079dc33a6b",
+  "data/dev/weak_dep/gaps35/test/history.csv": "0942e4e032a0fcd15740d49b75a635771a5079175292a74463dd8a1a7fc5e042",
+  "data/dev/weak_dep/gaps35/test/queries.csv": "32f85c236c54306db5423a9d1c7c4dd59ede31c9bb3c44aeb31ac2079dc33a6b",
+  "data/dev/weak_dep/recent40_older24/test/history.csv": "f1d3adf1316433c7ba9c2cc6239f1e9fa14f2015206d4c44429cb0fa46c040dd",
+  "data/dev/weak_dep/recent40_older24/test/queries.csv": "32f85c236c54306db5423a9d1c7c4dd59ede31c9bb3c44aeb31ac2079dc33a6b",
+  "data/dev/weak_dep/window48/test/history.csv": "89e8d12739664be51ba5c63cffe664c327ed5a6d973b9d0d713cbe5a9632a7ec",
+  "data/dev/weak_dep/window48/test/queries.csv": "32f85c236c54306db5423a9d1c7c4dd59ede31c9bb3c44aeb31ac2079dc33a6b",
+  "data/dev/xor3/full/test/history.csv": "32a668eec414979abc1e4f8840d94caa9900ac28e0393ab7dbd6133eff261835",
+  "data/dev/xor3/full/test/queries.csv": "0174d7888e0fe9269ccc7caeeb347e3bc3751636c61a3afdd02af0f8ce568467",
+  "data/dev/xor3/gaps35/test/history.csv": "08ed08e2cdbd42f6b69c47076b824c1d9c82fcae63bd0ceda1180df0a91222ff",
+  "data/dev/xor3/gaps35/test/queries.csv": "0174d7888e0fe9269ccc7caeeb347e3bc3751636c61a3afdd02af0f8ce568467",
+  "data/dev/xor3/recent40_older24/test/history.csv": "c6def7f7cc3665367e82aa78405ebcd77281e668d907eb41d8e12f6b89fd7e5c",
+  "data/dev/xor3/recent40_older24/test/queries.csv": "0174d7888e0fe9269ccc7caeeb347e3bc3751636c61a3afdd02af0f8ce568467",
+  "data/dev/xor3/window48/test/history.csv": "1a336214146aaf02910dc50248cae462726533027681917bf23b1895fa18ddd0",
+  "data/dev/xor3/window48/test/queries.csv": "0174d7888e0fe9269ccc7caeeb347e3bc3751636c61a3afdd02af0f8ce568467",
+  "data/sealed/and_rule/full/test/history.csv": "6b4d1aea63108149ae28b794b7d4b3eda33cf1961bdbfd3d6e4ca16e308de0c3",
+  "data/sealed/and_rule/full/test/queries.csv": "a7b44830b0b4138bf3e90a235bc08b45db112e91f7d464dae9366155a7a7ccc3",
+  "data/sealed/and_rule/gaps35/test/history.csv": "e1232fe68e74c32e16ca46ed837beb02b561c7634f6a3a2c0906568d6ba300b0",
+  "data/sealed/and_rule/gaps35/test/queries.csv": "a7b44830b0b4138bf3e90a235bc08b45db112e91f7d464dae9366155a7a7ccc3",
+  "data/sealed/and_rule/recent40_older24/test/history.csv": "0fc8ffa6d584112456a86630509839b6dcbad69fc938da6966c60f6b3a89f8a2",
+  "data/sealed/and_rule/recent40_older24/test/queries.csv": "a7b44830b0b4138bf3e90a235bc08b45db112e91f7d464dae9366155a7a7ccc3",
+  "data/sealed/and_rule/window48/test/history.csv": "ee562239ce1e2c84a2232ca08479b91082c2ed6a040aac4154ede1e75ae87535",
+  "data/sealed/and_rule/window48/test/queries.csv": "a7b44830b0b4138bf3e90a235bc08b45db112e91f7d464dae9366155a7a7ccc3",
+  "data/sealed/changes/full/test/history.csv": "11314d44345c66f966351efb7f06da51118989e62309b35dd3e989f2c3725e3e",
+  "data/sealed/changes/full/test/queries.csv": "39fb34db0891dad780493c89813c1d3a8f93f0e4c4273d6b5142c3173397cfe1",
+  "data/sealed/changes/gaps35/test/history.csv": "3a0db0031c9b091aa177e8c6163186adf3fb259e2a1925bb6723d722041642c7",
+  "data/sealed/changes/gaps35/test/queries.csv": "39fb34db0891dad780493c89813c1d3a8f93f0e4c4273d6b5142c3173397cfe1",
+  "data/sealed/changes/recent40_older24/test/history.csv": "164b06aa25bff9bd69121943fc05253ed57a7c9a892d987bf0b8e6abbc733df8",
+  "data/sealed/changes/recent40_older24/test/queries.csv": "39fb34db0891dad780493c89813c1d3a8f93f0e4c4273d6b5142c3173397cfe1",
+  "data/sealed/changes/window48/test/history.csv": "c66d7857a940a133d1083c01937436550f091b2279d0f2071c20b9a06788008e",
+  "data/sealed/changes/window48/test/queries.csv": "39fb34db0891dad780493c89813c1d3a8f93f0e4c4273d6b5142c3173397cfe1",
+  "data/sealed/constant/full/test/history.csv": "69de497a133f5adb1bc2bb1f329c9d78a55077bf8c38ca8cf4ce8b88e9cd2dd5",
+  "data/sealed/constant/full/test/queries.csv": "77b15571d0cecc38d54b0097fa015b57fa85d597ae0df92f9e33930cafd60b96",
+  "data/sealed/constant/gaps35/test/history.csv": "1ce9bf5114ab66236dc0d64616286768d5c552bdf4a6e8e24d78a5a541eb4982",
+  "data/sealed/constant/gaps35/test/queries.csv": "77b15571d0cecc38d54b0097fa015b57fa85d597ae0df92f9e33930cafd60b96",
+  "data/sealed/constant/recent40_older24/test/history.csv": "3a3543c6e206e96e4b913554c89f8ff5bfba0e4d57b88198dc40bc5c44250505",
+  "data/sealed/constant/recent40_older24/test/queries.csv": "77b15571d0cecc38d54b0097fa015b57fa85d597ae0df92f9e33930cafd60b96",
+  "data/sealed/constant/window48/test/history.csv": "870d2cca74dbfa544e1cac777af4b383175a6ed9ef69e3baeb4ca577d9ba2419",
+  "data/sealed/constant/window48/test/queries.csv": "77b15571d0cecc38d54b0097fa015b57fa85d597ae0df92f9e33930cafd60b96",
+  "data/sealed/main_like/full/test/history.csv": "84007b3d0f2fc3214da5cf8e8d6851be841946f93f4ef0866fa6fb91f5e8f890",
+  "data/sealed/main_like/full/test/queries.csv": "df6a4ecb684972aa30259fd7ed5b97edd4732cd2d0a43f7282902e4950252f28",
+  "data/sealed/main_like/gaps35/test/history.csv": "8a07680b74a7ca46c59807c6771acadba8fd210e5927957bb4bc0330fe92099e",
+  "data/sealed/main_like/gaps35/test/queries.csv": "df6a4ecb684972aa30259fd7ed5b97edd4732cd2d0a43f7282902e4950252f28",
+  "data/sealed/main_like/recent40_older24/test/history.csv": "2a311dbbffea79c6b68edfc95757687f87a4cf69ca3887a9f42f46a17cdab22f",
+  "data/sealed/main_like/recent40_older24/test/queries.csv": "df6a4ecb684972aa30259fd7ed5b97edd4732cd2d0a43f7282902e4950252f28",
+  "data/sealed/main_like/window48/test/history.csv": "3ea125e537656a6261e0c619301835e5324d3f8e678e7edb517ba9709b70d82a",
+  "data/sealed/main_like/window48/test/queries.csv": "df6a4ecb684972aa30259fd7ed5b97edd4732cd2d0a43f7282902e4950252f28",
+  "data/sealed/new_pairs/full/test/history.csv": "48ebe528e7a8a3615e6d4386216d37bafaccafe1d2516225618ce86610679e9b",
+  "data/sealed/new_pairs/full/test/queries.csv": "e9be1dca2b99f9a51886e5b7ed345e830ae4bf1c4bb2e4feb780b2ff5f0ed3f5",
+  "data/sealed/new_pairs/gaps35/test/history.csv": "2179fffd1d434192e627855f7a289c201a1a33d5974bdf0f2256ded19b1774f0",
+  "data/sealed/new_pairs/gaps35/test/queries.csv": "e9be1dca2b99f9a51886e5b7ed345e830ae4bf1c4bb2e4feb780b2ff5f0ed3f5",
+  "data/sealed/new_pairs/recent40_older24/test/history.csv": "dd9646b0fab7075c6f042d736fee4eced23d14d41cf032e6f880f77e326a07db",
+  "data/sealed/new_pairs/recent40_older24/test/queries.csv": "e9be1dca2b99f9a51886e5b7ed345e830ae4bf1c4bb2e4feb780b2ff5f0ed3f5",
+  "data/sealed/new_pairs/window48/test/history.csv": "1d22f9edd68a72d7083b9574cb3a73289dcfb279de5cf6a6d4bbba80873891d4",
+  "data/sealed/new_pairs/window48/test/queries.csv": "e9be1dca2b99f9a51886e5b7ed345e830ae4bf1c4bb2e4feb780b2ff5f0ed3f5",
+  "data/sealed/size_indep/full/test/history.csv": "2ec100796b41f04e3d98e16b7676436eaa72684b837733c17ebba46a66d6ccc4",
+  "data/sealed/size_indep/full/test/queries.csv": "5f76932d9121a48b9b4ca6f6e3c7e55b362c06fa1a583c1bd319f9f5b6ee7f64",
+  "data/sealed/size_indep/gaps35/test/history.csv": "109f6accfc6a8d1222431214386b2975c51fa3b7ae8adfcaeb788d5d306ed526",
+  "data/sealed/size_indep/gaps35/test/queries.csv": "5f76932d9121a48b9b4ca6f6e3c7e55b362c06fa1a583c1bd319f9f5b6ee7f64",
+  "data/sealed/size_indep/recent40_older24/test/history.csv": "ebc09255627e43c8089cd14f6debf8fc692fdc4ec0c0d717fd4c12caf62f6315",
+  "data/sealed/size_indep/recent40_older24/test/queries.csv": "5f76932d9121a48b9b4ca6f6e3c7e55b362c06fa1a583c1bd319f9f5b6ee7f64",
+  "data/sealed/size_indep/window48/test/history.csv": "75ab79b1a9c1ab6ad6527cccd9418be386879f52f6e5754d7feb6c224a6697ac",
+  "data/sealed/size_indep/window48/test/queries.csv": "5f76932d9121a48b9b4ca6f6e3c7e55b362c06fa1a583c1bd319f9f5b6ee7f64",
+  "data/sealed/weak_dep/full/test/history.csv": "4ba8247a363787f20fe84e7ed518d1185f89e252fa40acf16cc3828d2663ab2f",
+  "data/sealed/weak_dep/full/test/queries.csv": "b1b6678104f3e2bd746e49ac81e4aa0f69285e8b5a858701504b4fe6a39c6291",
+  "data/sealed/weak_dep/gaps35/test/history.csv": "bfe9e88a87259742b2f370dc710124742dc7949c97b6a194eed5b9ebd15c560f",
+  "data/sealed/weak_dep/gaps35/test/queries.csv": "b1b6678104f3e2bd746e49ac81e4aa0f69285e8b5a858701504b4fe6a39c6291",
+  "data/sealed/weak_dep/recent40_older24/test/history.csv": "5c6f5a0a22486396efb830857eeed8911bdfbcb393686c2a40ec8447b449cc6b",
+  "data/sealed/weak_dep/recent40_older24/test/queries.csv": "b1b6678104f3e2bd746e49ac81e4aa0f69285e8b5a858701504b4fe6a39c6291",
+  "data/sealed/weak_dep/window48/test/history.csv": "afb2936447ecf303a2c7b67d7877011d7b125a19bbf99aa87e96301fbd7d28ce",
+  "data/sealed/weak_dep/window48/test/queries.csv": "b1b6678104f3e2bd746e49ac81e4aa0f69285e8b5a858701504b4fe6a39c6291",
+  "data/sealed/xor3/full/test/history.csv": "aca075fdf3c5fd514ab6b951767ad2a4e6eebaa121b963a31febc01d96b1b397",
+  "data/sealed/xor3/full/test/queries.csv": "1d53c96cf8cf76ca9f120c791c3cda7e007e725bbcd49bad305e85491e1bcad6",
+  "data/sealed/xor3/gaps35/test/history.csv": "98b37d539518c9bc9da4cf967a2f3d89fc13bc50c9748ce449cb318c3df9c381",
+  "data/sealed/xor3/gaps35/test/queries.csv": "1d53c96cf8cf76ca9f120c791c3cda7e007e725bbcd49bad305e85491e1bcad6",
+  "data/sealed/xor3/recent40_older24/test/history.csv": "e8c37382de4056eae34967546870ac3ded8fe7d82b957b44725c9e404eecf961",
+  "data/sealed/xor3/recent40_older24/test/queries.csv": "1d53c96cf8cf76ca9f120c791c3cda7e007e725bbcd49bad305e85491e1bcad6",
+  "data/sealed/xor3/window48/test/history.csv": "a90e9816e9ab59e702532031b7f3d0f7a90648984edbee5a472f19c6ac561c9e",
+  "data/sealed/xor3/window48/test/queries.csv": "1d53c96cf8cf76ca9f120c791c3cda7e007e725bbcd49bad305e85491e1bcad6",
+  "generate.py": "2d70d4db81fecf45475bec553a64b5b5edb44451a14f04bee2e4f55b3d1cb3d3",
+  "run_entry.py": "bf81c93a5cf1c735a780cd1d0a3073eb8f7137dccd5e0e353fdc2da02f4f604d",
+  "score.py": "eecafa6ac6cd00450da533deb795e4321e19eceb2f3fc747b379c6aecad1e5f8",
+  "truth/dev/truth.csv": "9437f204da572d0254114834bc7979f8271d30fe2523eca2c51aa2a7edaf66e7",
+  "truth/sealed/truth.csv": "7fabf32aa963bb288e191d98e8e308ecd075bd2c495965ae5a133df5f503f802"
+ },
+ "masks": [
+  "full",
+  "recent40_older24",
+  "window48",
+  "gaps35"
+ ],
+ "scenarios": {
+  "and_rule": {
+   "change": "weather",
+   "lags": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     4,
+     7
+    ]
+   ],
+   "rule": "and",
+   "size": "lag_big",
+   "weak": false
+  },
+  "changes": {
+   "change": "drift_and_shared",
+   "lags": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     4,
+     7
+    ]
+   ],
+   "rule": "xor",
+   "size": "lag_big",
+   "weak": false
+  },
+  "constant": {
+   "change": "none",
+   "lags": [
+    []
+   ],
+   "rule": "none",
+   "size": "constant",
+   "weak": false
+  },
+  "main_like": {
+   "change": "weather",
+   "lags": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     4,
+     7
+    ]
+   ],
+   "rule": "xor",
+   "size": "lag_big",
+   "weak": false
+  },
+  "new_pairs": {
+   "change": "weather",
+   "lags": [
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     5,
+     7
+    ]
+   ],
+   "rule": "xor",
+   "size": "lag_big",
+   "weak": false
+  },
+  "size_indep": {
+   "change": "weather",
+   "lags": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     4,
+     7
+    ]
+   ],
+   "rule": "xor",
+   "size": "markov",
+   "weak": false
+  },
+  "weak_dep": {
+   "change": "none",
+   "lags": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     4,
+     7
+    ]
+   ],
+   "rule": "xor",
+   "size": "lag_big",
+   "weak": true
+  },
+  "xor3": {
+   "change": "weather",
+   "lags": [
+    [
+     1,
+     3,
+     6
+    ],
+    [
+     2,
+     4,
+     7
+    ],
+    [
+     1,
+     5,
+     8
+    ]
+   ],
+   "rule": "xor",
+   "size": "lag_big",
+   "weak": false
+  }
+ },
+ "sealed_truth_sha256": "7fabf32aa963bb288e191d98e8e308ecd075bd2c495965ae5a133df5f503f802",
+ "sets": {
+  "dev": {
+   "and_rule": {
+    "episodes": 8,
+    "machines": 56,
+    "seeds": [
+     5000,
+     5007
+    ]
+   },
+   "changes": {
+    "episodes": 8,
+    "machines": 51,
+    "seeds": [
+     7000,
+     7007
+    ]
+   },
+   "constant": {
+    "episodes": 8,
+    "machines": 60,
+    "seeds": [
+     1000,
+     1007
+    ]
+   },
+   "main_like": {
+    "episodes": 8,
+    "machines": 60,
+    "seeds": [
+     3000,
+     3007
+    ]
+   },
+   "new_pairs": {
+    "episodes": 8,
+    "machines": 55,
+    "seeds": [
+     4000,
+     4007
+    ]
+   },
+   "size_indep": {
+    "episodes": 8,
+    "machines": 62,
+    "seeds": [
+     8000,
+     8007
+    ]
+   },
+   "weak_dep": {
+    "episodes": 8,
+    "machines": 59,
+    "seeds": [
+     2000,
+     2007
+    ]
+   },
+   "xor3": {
+    "episodes": 8,
+    "machines": 64,
+    "seeds": [
+     6000,
+     6007
+    ]
+   }
+  },
+  "sealed": {
+   "and_rule": {
+    "episodes": 40,
+    "machines": 285,
+    "seeds": [
+     904000,
+     904039
+    ]
+   },
+   "changes": {
+    "episodes": 40,
+    "machines": 266,
+    "seeds": [
+     906000,
+     906039
+    ]
+   },
+   "constant": {
+    "episodes": 40,
+    "machines": 284,
+    "seeds": [
+     900000,
+     900039
+    ]
+   },
+   "main_like": {
+    "episodes": 40,
+    "machines": 271,
+    "seeds": [
+     902000,
+     902039
+    ]
+   },
+   "new_pairs": {
+    "episodes": 40,
+    "machines": 257,
+    "seeds": [
+     903000,
+     903039
+    ]
+   },
+   "size_indep": {
+    "episodes": 40,
+    "machines": 276,
+    "seeds": [
+     907000,
+     907039
+    ]
+   },
+   "weak_dep": {
+    "episodes": 40,
+    "machines": 308,
+    "seeds": [
+     901000,
+     901039
+    ]
+   },
+   "xor3": {
+    "episodes": 40,
+    "machines": 269,
+    "seeds": [
+     905000,
+     905039
+    ]
+   }
+  }
+ }
+}

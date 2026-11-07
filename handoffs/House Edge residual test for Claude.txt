@@ -1,0 +1,14 @@
+House Edge main round | cutoff residual test | decision: stop
+
+Baseline: submitted peer_main, public episode-held-out validation 59.035628/60.
+All 96 validation episodes, 8 machines each. The two checkpoints were fitted using the official training split and the opposite validation half. At every tick of the final 40-tick window the model received only spins strictly before that tick, including for neighbors. All 768 reconstructed cutoff probabilities matched the submitted cross-fitted validation file within 1e-8.
+
+For each episode the predictor was the pooled mean of observed win minus one-step predicted win probability across machines and the previous k ticks. The target was mean true cutoff win logit minus forecast win logit across the eight machines. Each episode contributed one observation. Intervals are percentile bootstrap intervals from 6,000 episode resamples stratified by validation fold.
+
+Ticks   Overall r     Fold A     Fold B    95% interval
+    5       .033       .098      -.016     [-.174, .244]
+   10      -.059      -.042      -.069     [-.258, .145]
+   20      -.029      -.009      -.059     [-.225, .170]
+   40       .165       .117       .153     [-.002, .333]
+
+The same-cutoff leave-one-machine-out correlation was .692, but that quantity uses the other machines' true odds at the cutoff. Earlier observable forecast misses had no window reaching the agreed .30 threshold. A modest effect remains possible. No correction was fitted, no candidate ZIP was produced, and no sealed test or new submission is needed for this lead.
