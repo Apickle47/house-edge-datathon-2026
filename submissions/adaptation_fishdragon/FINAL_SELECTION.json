@@ -1,0 +1,15 @@
+{
+  "team": "FishDragon",
+  "round": "adaptation",
+  "selection": "Final agreed ROUND2_SUBMIT pair; keep both files together.",
+  "submission_confirmation": "Not verified in this chat. Uploading to GitHub does not submit to the competition.",
+  "sha256": {
+    "submission.csv": "e7579fb8f1c2fe5b97469f1128c07d3c04eee6b2798ffae5610054cc69f66f62",
+    "entry.zip": "a809896a8e2c84566f8c299df0ef980f1c550bc3a2cad0b455c0046826674c87"
+  },
+  "validation_points": 19.760308379573292,
+  "round_max_points": 20,
+  "independent_alternate_split_points": 19.74998467239455,
+  "cross_check": "Equivalent independent builds, maximum probability difference 1.9984e-15. This archive reproduced its CSV on Windows Python 3.13 within 2.22045e-16.",
+  "no_further_model_changes": true
+}
