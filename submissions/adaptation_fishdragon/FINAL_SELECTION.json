@@ -11,5 +11,13 @@
   "round_max_points": 20,
   "independent_alternate_split_points": 19.74998467239455,
   "cross_check": "Equivalent independent builds, maximum probability difference 1.9984e-15. This archive reproduced its CSV on Windows Python 3.13 within 2.22045e-16.",
-  "no_further_model_changes": true
+  "no_further_model_changes": true,
+  "scoring_clarification": {
+    "organizer_reported_allocation": "60 main / 40 adaptation, as relayed by user",
+    "kit_reported_max_points": 20,
+    "validation_equivalent_out_of_40": 39.520616759146584,
+    "alternate_split_equivalent_out_of_40": 39.4999693447891,
+    "conversion_assumption": "Unchanged normalized loss and reference; multiply kit-reported points by two."
+  },
+  "model_lineage": "Reuses the main-round forecasting method and refits learned rules and calibration on the official adaptation kit. Original main-round submitted files remain unchanged."
 }
