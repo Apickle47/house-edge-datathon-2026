@@ -1,0 +1,17 @@
+{
+  "round": "main",
+  "submission_status": "User reported submitting this matched pair through the Google Form",
+  "receipt_verified_in_this_chat": false,
+  "files": {
+    "submission.csv": {
+      "path": "submissions/main_peer_main/submission.csv",
+      "sha256": "67fa8d869e2a538973fa96d7214085b25089d7ae651548976c8a58b82378e16f"
+    },
+    "entry.zip": {
+      "path": "submissions/main_peer_main/entry.zip",
+      "sha256": "2f53382209ab7c0e729d9bb0bb2546b8caa83c5a1b3cd41fd392da4398c5f465"
+    }
+  },
+  "verification": "Both file hashes match the tested archive and the exact output copies supplied to the user in this chat.",
+  "note": "Keep these files paired. Training/evaluation fixes and adaptation work are separate from this submitted main checkpoint."
+}
